@@ -5,17 +5,17 @@ using namespace std;
 AnimalShelter::AnimalShelter(){ //Define the default constructor
 
 	_animals = 0;
-  _rooms = 5;
-  _myArr = new Animal[_rooms];
+	_rooms = 5;
+	_myArr = new Animal[_rooms];
 }
 
 AnimalShelter::AnimalShelter(std::istream &is){ //Define the input constructor
 
-    _animals = 0;
-    _rooms = 5;
-    _myArr = new Animal[_rooms];
+	_animals = 0;
+	_rooms = 5;
+	_myArr = new Animal[_rooms];
     
-   is >> *this;
+	is >> *this;
 }
     
 	
@@ -32,7 +32,7 @@ AnimalShelter& AnimalShelter::adopt(const Animal &animal){	//Define the adopt me
    	}
    
 	}
-		return *this;
+	return *this;
 }
 
 Animal* AnimalShelter::find(const Animal &animal){ //Define the find method
