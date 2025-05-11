@@ -31,11 +31,11 @@ class AnimalShelter{
 
 		Animal* celebrateBirthday(const Animal &animal);	//Declare the celebrateBirthday method
 	
-		AnimalShelter& operator=(const AnimalShelter &new_shelter); 					//Declare the overloaded '=' 
-		AnimalShelter& operator+=(const Animal &new_animal);								//Declare the overloaded '+=' for Animal
-		AnimalShelter& operator+=(const AnimalShelter &new_shelter);					//Declare the overloaded '+=' for AnimalShelter
-		AnimalShelter operator+(const AnimalShelter &new_shelter) const;				//Declare the overloaded '+' 
-		friend std::istream& operator>>(std::istream &is, AnimalShelter &a);			//Declare the overloaded '>>' 
+		AnimalShelter& operator=(const AnimalShelter &new_shelter); 			//Declare the overloaded '=' 
+		AnimalShelter& operator+=(const Animal &new_animal);				//Declare the overloaded '+=' for Animal
+		AnimalShelter& operator+=(const AnimalShelter &new_shelter);			//Declare the overloaded '+=' for AnimalShelter
+		AnimalShelter operator+(const AnimalShelter &new_shelter) const;		//Declare the overloaded '+' 
+		friend std::istream& operator>>(std::istream &is, AnimalShelter &a);		//Declare the overloaded '>>' 
 		friend std::ostream& operator<<(std::ostream &os, const AnimalShelter &a);	//Declare the overloaded '<<' 
 
 };
